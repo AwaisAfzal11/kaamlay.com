@@ -43,6 +43,7 @@ The content is organized as follows:
 .github/workflows/deploy.yml
 .gitignore
 package.json
+postcss.config.js
 public/Assets/Readme
 public/index.html
 src/App.js
@@ -61,6 +62,15 @@ tailwind.config.js
 
 <files>
 This section contains the contents of the repository's files.
+
+<file path="postcss.config.js">
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+</file>
 
 <file path=".gitignore">
 # Logs

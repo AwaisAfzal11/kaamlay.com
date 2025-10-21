@@ -13,12 +13,16 @@ module.exports = {
         'light': '#F9FAFB',     // A very light gray for backgrounds
       },
       fontFamily: {
-        // You can add a custom font here if you like, e.g., 'Poppins', sans-serif
-        'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
+        // Set Montserrat as the default sans-serif font for Tailwind utilities
+        'sans': ['Montserrat', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
+        'poppins': ['Poppins', 'sans-serif'],
+        'cairo': ['Cairo', 'sans-serif'],
       }
     },
   },
   plugins: [
     require('@tailwindcss/forms'),
+    // If you plan to use Tailwind Typography, uncomment the line below.
+    // require('@tailwindcss/typography'), 
   ],
 }
